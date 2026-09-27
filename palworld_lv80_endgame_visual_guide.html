@@ -1,0 +1,184 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Palworld Lv.80 Endgame Guide</title><style>
+:root{--bg:#101217;--card:#191e26;--line:#343c49;--text:#eef2f6;--muted:#aab4c0;--cyan:#67e8f9;--gold:#fbbf24;--green:#86efac}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 Arial,sans-serif}main{max-width:950px;margin:auto;padding:16px}
+h1{color:var(--gold);font-size:1.6rem;margin-bottom:4px}h2{color:var(--cyan);font-size:1.2rem;border-bottom:1px solid var(--line);padding-bottom:5px;margin-top:26px}
+h3{color:var(--green);font-size:1rem}.muted{color:var(--muted)}.hot{color:var(--gold);font-weight:bold}.card,details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px;margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px}table{width:100%;border-collapse:collapse;background:var(--card);font-size:.9rem}
+th,td{padding:7px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--gold)}nav{position:sticky;top:0;background:#101217f2;padding:8px 0;white-space:nowrap;overflow:auto;z-index:5;border-bottom:1px solid var(--line)}
+nav a{display:inline-block;color:var(--cyan);background:var(--card);text-decoration:none;padding:6px 9px;margin-right:4px;border-radius:7px;font-size:.82rem}summary{color:var(--cyan);font-weight:bold;cursor:pointer}li{margin:4px 0}
+@media(max-width:600px){main{padding:11px}th,td{font-size:.82rem;padding:5px}}</style>
+<style>
+.hero{position:relative;overflow:hidden;border:1px solid #3a4656;border-radius:18px;padding:22px;margin:14px 0 18px;
+background:radial-gradient(circle at 85% 15%,rgba(103,232,249,.18),transparent 30%),
+linear-gradient(135deg,#17202b,#101217 55%,#19152b)}
+.hero:after{content:"";position:absolute;inset:auto -80px -100px auto;width:260px;height:260px;border-radius:50%;
+background:rgba(251,191,36,.08);filter:blur(4px)}
+.hero h1{font-size:2rem;margin:0}.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#67e8f9;font-weight:700}
+.visual-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:10px 0 18px}
+.visual-card{position:relative;overflow:hidden;min-height:190px;border-radius:14px;border:1px solid #36404e;background:#171c24}
+.visual-card img{width:100%;height:145px;object-fit:cover;display:block;background:#222a35}
+.visual-card .vcopy{padding:9px}.visual-card b{display:block}.visual-card small{color:#aab4c0}
+.pal-card img{object-position:center top}
+.equip-card img{height:170px}
+.badge{display:inline-block;padding:3px 7px;border-radius:999px;background:#293241;color:#c8d2dc;font-size:.72rem;margin:3px 3px 0 0}
+.badge.ice{background:#173b52;color:#9ee7ff}.badge.water{background:#17365a;color:#a8d5ff}.badge.electric{background:#554915;color:#ffe983}
+.badge.dark{background:#352b4f;color:#d9c6ff}.badge.dragon{background:#3f2850;color:#e7c6ff}.badge.ground{background:#4b3824;color:#f4d0a0}.badge.grass{background:#183f2b;color:#9df1b9}
+.coord-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:9px}
+.coord{background:linear-gradient(145deg,#1b222c,#151920);border:1px solid #344050;border-radius:12px;padding:11px}
+.coord .pin{font-size:1.25rem}.coord code{display:inline-block;margin-top:5px;padding:4px 7px;background:#0e1116;border-radius:6px;color:#fbbf24;font-weight:700}
+.loadout-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
+.slot{border:1px solid #36404e;border-radius:11px;padding:9px;background:#161b22;text-align:center}.slot strong{color:#67e8f9}
+.callout{border-left:4px solid #fbbf24;background:#211e16;padding:10px 12px;border-radius:0 10px 10px 0;margin:10px 0}
+</style>
+</head><body><main>
+<div class="hero">
+<div class="eyebrow">Post-story optimization dashboard</div>
+<h1>Palworld Lv. 80 Endgame</h1>
+<p>World Tree open • 3 specialized bases • Ancient production online</p>
+<p class="muted">Fast reference for gear, combat teams, schematics, resources, breeding and farming. 0★ assumed unless noted.</p>
+</div>
+<nav><a href="#now">NOW</a><a href="#gear">GEAR</a><a href="#weapons">WEAPONS</a><a href="#resources">RESOURCES</a><a href="#pals">PALS</a><a href="#skills">SKILLS</a><a href="#bases">BASES</a><a href="#upgrades">UPGRADES</a></nav>
+
+<h2 id="now">🎯 Current Priorities</h2>
+<div class="card"><b>Quick Loadout</b>
+<div class="loadout-strip">
+<div class="slot"><strong>1</strong><br>Plasma Rifle</div>
+<div class="slot"><strong>2</strong><br>Beam Launcher</div>
+<div class="slot"><strong>3</strong><br>Beam Scatter</div>
+<div class="slot"><strong>4</strong><br>Drone Launcher</div>
+<div class="slot"><strong>5</strong><br>Laser Sword</div>
+<div class="slot"><strong>6</strong><br>Utility / Flex</div>
+</div></div>
+<div class="grid">
+<div class="card"><b>Gear</b><br>Lightweight Ancient Armor 4 → Ancient Helm → endgame accessories.</div>
+<div class="card"><b>Weapons</b><br>Plasma Rifle 4 → Beam Launcher 4 → Beam Scatter / Drone → Laser Sword.</div>
+<div class="card"><b>Pals</b><br>Perfect Frostallion, Panthalus, Knocklem, Orserk + Xenolord/Eidrolon/Lyleen.</div>
+<div class="card"><b>Mining</b><br>Ancient Material Synthesizer → Soralite / Coralum / Hexolite Quartz / Chromite.</div>
+<div class="card"><b>World Tree</b><br>Holy Water + Radiant Gems + Relics + Paloxite + Mythical Wood.</div>
+<div class="card"><b>Passive loop</b><br>Keep World Tree expedition running.</div></div>
+
+<h2 id="gear">🛡️ Armor + Accessories</h2><div class="card"><span class="hot">Main armor target:</span> <b>Legendary Lightweight Ancient Armor</b>.</div>
+<table><tr><th>Accessory</th><th>Purpose</th><th>Location</th></tr>
+<tr><td><b>Dogen Emblem</b></td><td>Player + active Pal Attack</td><td>Sunreach ~(-301,-1506)</td></tr>
+<tr><td><b>Silvegis Emblem</b></td><td>Player + active Pal Defense</td><td>Feybreak cave ~(-1036,-1146)</td></tr>
+<tr><td><b>Warsect Terra's Belt</b></td><td>Defense + HP</td><td>Sakurajima ~(-664,30)</td></tr>
+<tr><td><b>Phantom Ring</b></td><td>Longer dodge invulnerability</td><td>Astral Mountains ~109,472</td></tr>
+<tr><td>Islander’s Tool Belt</td><td>Carry/work utility</td><td>Resource runs</td></tr>
+<tr><td>Pal Tamer’s Glasses</td><td>Mercy + Potential viewing</td><td>Catching/breeding</td></tr></table>
+<p><b>Default combat:</b> Dogen + Silvegis + Warsect Terra + Phantom Ring.</p>
+<h3>📍 Coordinate Quick Cards</h3>
+<div class="coord-grid">
+ <div class="coord"><span class="pin">📍</span> <b>Dogen Emblem</b><br><small>Sunreach ruin</small><br><code>-301, -1506</code></div>
+ <div class="coord"><span class="pin">📍</span> <b>Silvegis Emblem</b><br><small>Feybreak cave</small><br><code>-1036, -1146</code></div>
+ <div class="coord"><span class="pin">📍</span> <b>Warsect Terra's Belt</b><br><small>Sakurajima</small><br><code>-664, 30</code></div>
+ <div class="coord"><span class="pin">📍</span> <b>Phantom Ring</b><br><small>Astral Mountains ruin</small><br><code>109, 472</code></div>
+ <div class="coord"><span class="pin">📍</span> <b>Silvegis Alpha</b><br><small>Scorched Hill</small><br><code>-984, -1022</code></div>
+ <div class="coord"><span class="pin">🗺️</span> <b>World Tree</b><br><small>Primary endgame circuit</small><br><code>Holy Water • Gems • Relics</code></div>
+</div>
+
+
+<h2 id="weapons">🔫 Endgame Weapon Loadout</h2><table>
+<tr><th>Slot</th><th>Weapon</th><th>Use</th></tr>
+<tr><td>1</td><td><b>Plasma Rifle</b></td><td>Main sustained DPS</td></tr>
+<tr><td>2</td><td><b>Beam Launcher</b></td><td>Heavy boss burst / AOE</td></tr>
+<tr><td>3</td><td><b>Beam Scatter</b></td><td>Close-range DPS / status</td></tr>
+<tr><td>4</td><td><b>Drone Launcher</b></td><td>Deploy, then swap for overlapping DPS</td></tr>
+<tr><td>5</td><td><b>Laser Sword</b></td><td>Endgame melee</td></tr>
+<tr><td>6</td><td>Plasma Multicutter / flex</td><td>Harvesting; swap for boss combat</td></tr></table>
+
+<h3>Equipment Cards</h3>
+<div class="visual-grid">
+  <div class="visual-card equip-card"><img loading="lazy" src="https://palpedia.com/og-image/0bc4cb47080027b15c938fb5b55b7627.jpeg" alt="Plasma Rifle"><div class="vcopy"><b>Plasma Rifle</b><small>Primary sustained DPS</small></div></div>
+  <div class="visual-card equip-card"><img loading="lazy" src="https://cdn.gamever.io/content/ckeditor/2026/07/20/image-20260720133324-3.jpeg" alt="Drone Launcher"><div class="vcopy"><b>Drone Launcher</b><small>Deploy → swap → overlapping DPS</small></div></div>
+  <div class="visual-card equip-card"><img loading="lazy" src="https://assets.palmods.gg/blog/legendary-armor-weapons-palworld-1-0/drafting-table.jpg" alt="Legendary schematic crafting"><div class="vcopy"><b>Legendary Schematics</b><small>Hard Towers + Recycler + treasure routes</small></div></div>
+</div>
+<h3>Legendary schematic priority</h3><ol>
+<li>Lightweight Ancient Armor 4 — Bjorn & Bastigor Hard (~10%)</li><li>Plasma Rifle 4 — Saya & Selyne Hard (~10%)</li>
+<li>Beam Launcher 4 — Auri & Shaolong Hard (~10%)</li><li>Beam Scatter 4 — Zoe & Grizzbolt Hard (~10%)</li>
+<li>Drone Launcher 4 — Lily & Lyleen Hard (~10%)</li><li>Laser Sword 4 — high-end Sunreach/Sakurajima treasure routes</li></ol>
+<div class="card"><b>Also:</b> Relic Recycler, World Tree/Sunreach fishing, locked chests and treasure maps.</div>
+
+<h2 id="resources">📦 Endgame Resource Guide</h2><table>
+<tr><th>Resource</th><th>Priority</th><th>Best loop / use</th></tr>
+<tr><td>World Tree Holy Water</td><td>🔥 HOARD</td><td>World Tree expedition, Alphas, fishing/springs. Awakening + Paloxite + Ancient recipes.</td></tr>
+<tr><td>Radiant Gems</td><td>🔥 HOARD</td><td>World Tree elemental drops → Awakening Crystals.</td></tr>
+<tr><td>Ancient Relics</td><td>🔥 RECYCLE</td><td>World Tree expedition, combat, fishing, chests, Hard Towers.</td></tr>
+<tr><td>Ancient Civilization Cores</td><td>🔥 HOARD</td><td>Expeditions/endgame/recycler; Ancient infrastructure.</td></tr>
+<tr><td>AI Cores</td><td>🔥 HOARD</td><td>Endgame weapons, gear and machines.</td></tr>
+<tr><td>Paloxite / Ingots</td><td>🔥 HOARD</td><td>World Tree gear/machines.</td></tr>
+<tr><td>Soralite</td><td>HIGH</td><td>Synthesizer or Sunreach.</td></tr>
+<tr><td>Chromite</td><td>HIGH</td><td>Synthesizer or Smokie-assisted Feybreak farming → Hexolite.</td></tr>
+<tr><td>Coralum</td><td>HIGH</td><td>Synthesizer / salvage / Whalaska.</td></tr>
+<tr><td>Mythical Wood</td><td>HIGH</td><td>World Tree trees or Relic Recycler.</td></tr>
+<tr><td>Crude Oil / Plasteel</td><td>HIGH</td><td>Keep automated.</td></tr>
+<tr><td>Pure / Hexolite Quartz</td><td>HIGH</td><td>Electronics and high-tier chains.</td></tr>
+<tr><td>Flame / Ice / Electric Organs</td><td>MED-HIGH</td><td>Ranch continuously.</td></tr></table>
+<div class="card"><b>Do not casually sell:</b> Holy Water, Radiant Gems, Relics, Paloxite, Soralite, Ancient Cores, AI Cores or Thermal Cores.</div>
+
+
+<h2>🖼️ Core Pal Cards</h2>
+<div class="visual-grid">
+  <div class="visual-card pal-card"><img loading="lazy" src="https://cdn.gameleap.com/images/articles/art_h-KO2cKQij/art-img_W0RdLE_BB/1x.webp" alt="Lyleen"><div class="vcopy"><b>Lyleen</b><small>Heal / Grass support</small><br><span class="badge grass">GRASS</span></div></div>
+  <div class="visual-card pal-card"><img loading="lazy" src="https://static.deltiasgaming.com/2025/01/Palworld-Knocklem.jpg" alt="Knocklem"><div class="vcopy"><b>Knocklem</b><small>Burst / tank</small><br><span class="badge ground">GROUND</span></div></div>
+  <div class="visual-card pal-card"><img loading="lazy" src="https://staticg.sportskeeda.com/editor/2024/01/6395c-17060001061050-1920.jpg?w=1460" alt="Orserk"><div class="vcopy"><b>Orserk</b><small>Electric specialist</small><br><span class="badge electric">ELECTRIC</span><span class="badge dragon">DRAGON</span></div></div>
+  <div class="visual-card pal-card"><img loading="lazy" src="https://static.deltiasgaming.com/2024/12/xenolord-palworld-1536x864.jpg" alt="Xenolord"><div class="vcopy"><b>Xenolord</b><small>Combat flyer / Dark-Dragon</small><br><span class="badge dark">DARK</span><span class="badge dragon">DRAGON</span></div></div>
+  <div class="visual-card pal-card"><img loading="lazy" src="https://image.jeuxvideo.com/medias-crop-1200-675/178454/1784541762-3387-card.jpg" alt="Eidrolon"><div class="vcopy"><b>Eidrolon</b><small>Dragon/Dark synergy flyer</small><br><span class="badge dragon">DRAGON</span><span class="badge dark">DARK</span></div></div>
+  <div class="visual-card pal-card"><img loading="lazy" src="https://models.spriters-resource.com/media/preview_icons/349/352099.png?updated=1755515044" alt="Jetragon"><div class="vcopy"><b>Jetragon</b><small>Speed / Dragon / Gathering</small><br><span class="badge dragon">DRAGON</span></div></div>
+</div>
+<div class="callout"><b>Also core:</b> Frostallion, Panthalus, Silvegis, Necromus, Paladius, Neptilius and Aegidron. Your party cards below show where each fits.</div>
+<h2 id="pals">🐉 Party Setups</h2>
+<div class="card"><b>General:</b> Frostallion • Lyleen • Panthalus • Orserk • Knocklem</div>
+<div class="card"><b>Offense:</b> Frostallion • Panthalus • Knocklem • Orserk • Xenolord</div>
+<div class="card"><b>Dragon/Dark:</b> Eidrolon • Jetragon • Xenolord • Necromus • Lyleen<br><span class="muted">Drop Lyleen for another Dragon/Dark to maximize Eidrolon synergy.</span></div>
+<div class="card"><b>Survival:</b> Panthalus • Silvegis • Lyleen • Frostallion • Orserk</div>
+<div class="card"><b>Necromus/Paladius:</b> Necromus • Paladius • Frostallion • Orserk • Lyleen</div>
+<p><b>Perfect first:</b> Frostallion • Panthalus • Knocklem/Knocklem Ignis • Orserk • Xenolord • Eidrolon. Also excellent: Jetragon, Necromus, Bellanoir Libero, Neptilius, Silvegis, Aegidron, Lyleen/Lyleen Noct.</p>
+
+<h2 id="skills">⚔️ Passives + Active Skills + Orchard</h2>
+<div class="card"><b>Generic DPS baseline:</b> Demon God • Musclehead • Serenity • Legend<br><span class="muted">Species/element/Partner Skill builds can differ.</span></div>
+<h3>Getting passives</h3><ul>
+<li><b>Breeding:</b> main method. Aim for 2 desired passives on each parent, then combine.</li>
+<li><b>Captured donors:</b> save rare-passive Pals.</li>
+<li><b>Passive implants:</b> fix an otherwise excellent Pal instead of restarting.</li></ul>
+<h3>Skillfruit Orchard priority</h3><ol>
+<li><b>Holy Burst</b></li><li><b>Dragon Meteor</b></li><li><b>Fire Ball</b></li>
+<li><b>Blizzard Spike / Dark Laser / Lightning Bolt / Hydro Laser / Solar Blast</b></li>
+<li><b>Beam Slicer</b> for shorter-cooldown coverage</li></ol>
+<div class="card"><b>Skill pattern:</b> fast/medium skill + strong mid-cooldown skill + nuke.</div>
+
+<h2 id="bases">🏠 Your 3 Bases</h2>
+<details open><summary>Base 1 — HOME / Production</summary>
+<p><b>Keep:</b> 2 Ancient Furnaces, Ancient Workbench, Ancient Power, Ancient Monitoring, Ancient Kitchen, Relic Recycler.</p>
+<p><b>Targets:</b> Orserk (Electricity), Renjishi (Kindling), Solenne (Handiwork), Silvance (Medicine). Storage beside machines.</p></details>
+
+<details open><summary>Base 2 — MINING / Synthesizer</summary>
+<p><b>Ancient Material Synthesizer:</b> no Ore/Chromite/etc. input. It consumes <b>800 power + one worker</b>.</p>
+<p><b>Requirement:</b> Mining Lv.6 for minerals; Lumbering Lv.6 for wood.</p>
+<p><b>Priority:</b> Soralite → Coralum → Hexolite Quartz → Chromite → Pure Quartz, based on stock.</p>
+<p><b>Workers:</b> Aegidron for Mining; Knocklem for Mining + Transport.</p></details>
+
+<details open><summary>Base 3 — FARM / RANCH / HATCHERY</summary>
+<p><b>Ancient Farm:</b> Planting 6 + Watering 6 + Gathering 6. Each completed harvest gives <b>10</b> selected crops.</p>
+<p><b>Crops:</b> Red Berries, Wheat, Tomato, Potato, Lettuce, Carrot, Onion.</p>
+<p><b>Workers:</b> Dandilord (Planting), Shaolong (Watering), Jetragon (Gathering).</p>
+<p><b>Ranch:</b> Flame Organs • High Quality Pal Oil • High Quality Cloth • Ice Organs • Milk/Honey as needed.</p>
+<p><b>Hatchery:</b> passive breeding + condensation copies + resource breeding.</p></details>
+<h3>🔥 Flame Organ Fix</h3>
+<div class="card"><b>Kelpsea Ignis in Ranch</b><br>0★: 1 Flame Organ/drop • ★1: 1–2 • ★2: 1–3 • ★3: 1–4 • ★4: 1–5.<br><br>
+<b>Best improvement:</b> condense the ranch Kelpsea Ignis. Ranch production is also affected by Work Speed.</div>
+<h3>Resource breeding</h3><ul><li><b>Smokie</b> — Chromite support.</li><li><b>Jellroy</b> — salvage/Coralum.</li><li><b>Whalaska</b> — Coralum route.</li><li><b>Kelpsea Ignis</b> — Flame Organs.</li><li>Dedicated ranchers — HQ Pal Oil, HQ Cloth, Ice Organs, Milk/Honey.</li></ul>
+<h3>Ancient Relics</h3><div class="card"><b>Farm:</b> World Tree expedition → World Tree combat/Alphas → fishing → locked chests → Hard Towers.<br><b>Recycle:</b> for World Tree materials, Radiant Gems, Ancient Cores, Skill Fruits and schematics.</div>
+
+<h2 id="upgrades">⭐ Pal Upgrade Systems</h2>
+<div class="card"><b>Permanent Pal order:</b> Desired passives → good Potential → Pal Souls → ★ condensation → Awakening → Trust/finishing.</div>
+<h3>Awakening</h3><p><b>50 matching Radiant Gems + 10 World Tree Holy Water</b> → matching Awakening Crystal at the Ancient Workbench. Save these for permanent combat Pals.</p>
+<h3>Starfruit / Dog Coins</h3><table><tr><th>Rank</th><th>Dog Coins</th></tr><tr><td>0★ → 1★</td><td>50</td></tr><tr><td>1★ → 2★</td><td>100</td></tr><tr><td>2★ → 3★</td><td>200</td></tr><tr><td>3★ → 4★</td><td>400</td></tr><tr><td><b>0★ → 4★ total</b></td><td><b>750</b></td></tr></table>
+<p><b>Rule:</b> breed/catch duplicates for easy Pals. Save expensive Starfruit for rare, difficult or unbreedable permanent Pals.</p>
+<h3>Expedition Firepower</h3><ul><li>Use highest-level, highest-stat spare Pals.</li><li><b>Condensation is one of the strongest Firepower upgrades.</b></li><li>Souls, Potential, Trust and Awakening improve the underlying combat stats.</li><li>Do not breed perfect combat passives solely for expedition duty.</li></ul>
+<div class="card"><b>World Tree expedition:</b> passive Holy Water + Paloxite + Ancient Relics + Radiant Gems + Ancient Civilization Cores.</div>
+
+<h2>💰 Money / Selling</h2><div class="card"><b>Sell surplus, not bottlenecks.</b><br>Fine: excess ranch output, unwanted loot and manufactured ammo when reserves are healthy.<br>Avoid: World Tree materials, Ancient/AI/Thermal Cores, Soralite, Paloxite, Holy Water, Radiant Gems and Relics.</div>
+
+<h2>✅ Fast Endgame Loop</h2><ol><li>Run World Tree expedition.</li><li>Set Synthesizer to your lowest endgame resource.</li><li>Collect Ranch output; keep Flame Organs running.</li><li>Keep Orchard copying a premium Skill Fruit.</li><li>Run a Hard Tower for your next Legendary schematic.</li><li>Kill convenient World Tree Alphas / collect Holy Water + gems.</li><li>Recycle Relics.</li><li>Breed one permanent combat/resource project at a time.</li></ol>
+<p class="muted">Palworld 1.0-era endgame cheat sheet. Loot tables and balance can change with patches.</p></main></body></html>
